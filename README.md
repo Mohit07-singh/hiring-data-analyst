@@ -1,4 +1,4 @@
-# TalentAI Candidate Sourcing RAG App
+# Candidate Sourcing RAG App
 
 A modern, high-performance candidate sourcing application powered by local vector search (**ChromaDB**), local semantic embeddings (**sentence-transformers**), and reasoning models (**Groq LLM**). It features a beautiful, glassmorphic UI with persistent chat history.
 
