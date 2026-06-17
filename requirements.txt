@@ -1,0 +1,18 @@
+# Web Framework & API Server
+fastapi
+uvicorn
+
+# RAG Orchestration & Groq Integration
+langchain
+langchain-community
+langchain-groq
+
+# Vector Database & Free Local Embeddings
+chromadb
+langchain-chroma
+sentence-transformers
+
+# Document & Data Processing
+pandas
+python-dotenv
+pydantic
