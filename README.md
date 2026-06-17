@@ -20,7 +20,7 @@ Follow these steps to set up and run the backend API and the frontend dev server
 
 1. **Navigate to the Backend Directory**:
    ```bash
-   cd rag-web-app/backend
+   cd backend
    ```
 
 2. **Create and Activate a Virtual Environment (Recommended)**:
@@ -41,7 +41,7 @@ Follow these steps to set up and run the backend API and the frontend dev server
    ```
 
 4. **Set Up Environment Variables**:
-   Create a `.env` file in the `rag-web-app/backend` directory and add your Groq API key:
+   Create a `.env` file in the `backend` directory and add your Groq API key:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
    GROQ_MODEL=llama-3.1-8b-instant
@@ -60,7 +60,7 @@ Follow these steps to set up and run the backend API and the frontend dev server
 
 1. **Open a New Terminal Window** and navigate to the frontend directory:
    ```bash
-   cd rag-web-app/frontend
+   cd frontend
    ```
 
 2. **Install Frontend Dependencies**:
@@ -83,27 +83,27 @@ Follow these steps to set up and run the backend API and the frontend dev server
 
 ```
 hiring_data_rag/
-├── rag-web-app/
-│   ├── backend/
-│   │   ├── app/
-│   │   │   ├── core/
-│   │   │   │   ├── embeddings.py  # Local sentence-transformers loader
-│   │   │   │   ├── generator.py   # Query routing & LLM response builder
-│   │   │   │   └── ingestion.py   # Dataset ingestion script
-│   │   │   ├── database/
-│   │   │   │   └── vector_store.py# ChromaDB client initialization
-│   │   │   └── main.py            # FastAPI entrypoint and routes
-│   │   └── requirements.txt       # Python dependencies
-│   ├── data/
-│   │   ├── raw/                   # CSV candidate dataset (5k profiles)
-│   │   └── processed_index/       # Local SQLite & ChromaDB binary index files
-│   └── frontend/
-│       ├── src/
-│       │   ├── components/        # React components
-│       │   ├── services/
-│       │   │   └── api.js         # API client connection functions
-│       │   ├── App.js             # Main layout, chat logic & state
-│       │   └── index.css          # Core styling system (CSS)
-│       └── package.json           # Frontend dependencies
-└── README.md                      # This guide
+├── backend/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── embeddings.py  # Local sentence-transformers loader
+│   │   │   ├── generator.py   # Query routing & LLM response builder
+│   │   │   └── ingestion.py   # Dataset ingestion script
+│   │   ├── database/
+│   │   │   └── vector_store.py# ChromaDB client initialization
+│   │   └── main.py            # FastAPI entrypoint and routes
+│   └── requirements.txt       # Python dependencies
+├── data/
+│   ├── raw/                   # CSV candidate dataset (5k profiles)
+│   └── processed_index/       # Local SQLite & ChromaDB binary index files (untracked)
+├── frontend/
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   ├── services/
+│   │   │   └── api.js         # API client connection functions
+│   │   ├── App.js             # Main layout, chat logic & state
+│   │   └── index.css          # Core styling system (CSS)
+│   └── package.json           # Frontend dependencies
+├── .gitignore                 # Git ignore file
+└── README.md                  # This guide
 ```

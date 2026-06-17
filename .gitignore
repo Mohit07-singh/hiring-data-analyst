@@ -30,3 +30,6 @@ yarn-error.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Database indexes
+data/processed_index/
